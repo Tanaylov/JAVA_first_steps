@@ -43,12 +43,7 @@ public class Origin {
      */
     private static boolean evenNum(List<Integer> score){
         int res = 0;
-        for (Integer el : score) {
-            res += el;
-        }
-        if (res % 2 == 0) {
-            return true;
-        }
-        return false;
+        for (Integer el : score) res += el;
+        return res % 2 == 0;
     }
 }
